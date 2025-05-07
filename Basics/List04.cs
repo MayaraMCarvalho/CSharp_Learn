@@ -147,7 +147,7 @@ namespace Lists
 
             for (int i = 1; i <= number; i++)
             {
-                Console.WriteLine($"{i} {i * i} {i* i *i}");
+                Console.WriteLine($"{i} {i * i} {i * i * i}");
             }
         }
     }
