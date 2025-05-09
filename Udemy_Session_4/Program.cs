@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Globalization;
-using Udemy_Session_4;
+using List01;
+using List02;
 
 namespace Udemy_Session_4
 {
@@ -8,12 +9,17 @@ namespace Udemy_Session_4
     {
         static void Main( string[] args )
         {
-
+            // Exs List01
             //Pessoas();
-            Funcionarios();
+            //Funcionarios();
 
+            // Exs List02
+            //Retangulos();
+            //Impostos();
+            Notas();
         }
 
+        // "Mains" Exs List01
         static void Pessoas()
         {
             Pessoa p1 = new Pessoa();
@@ -64,6 +70,55 @@ namespace Udemy_Session_4
             double media = (f1.Salario + f2.Salario) / 2.0;
 
             Console.WriteLine("\nSalário médio = " + media.ToString("F2", CultureInfo.InvariantCulture));
+        }
+
+        // "Mains" Exs List02
+        static void Retangulos()
+        {
+            Retangulo r1 = new Retangulo();
+
+            Console.WriteLine("Entre com a largura e altura do retângulo:");
+            r1.Largura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            r1.Altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                     
+            Console.WriteLine($"\nAREA = {r1.Area().ToString("F2", CultureInfo.InvariantCulture)}");
+            Console.WriteLine($"PERÍMETRO = {r1.Perimetro().ToString("F2", CultureInfo.InvariantCulture)}");
+            Console.WriteLine($"DIAGONAL = {r1.Diagonal().ToString("F2", CultureInfo.InvariantCulture)}");
+
+        }
+
+        static void Impostos()
+        {
+            FuncionarioImposto func = new FuncionarioImposto();
+
+            Console.Write("Nome: ");
+            func.Nome = Console.ReadLine();
+            Console.Write("Salário Bruto: ");
+            func.SalarioBruto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.Write("Imposto: ");
+            func.Imposto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Console.WriteLine($"\nFuncionário: {func}");
+            
+            Console.Write("\nDigite a porcentagem para aumentar o salário: ");
+            double porcentagem = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            func.AumentarSalario(porcentagem);
+
+            Console.WriteLine($"\nDados atualizados: {func}");
+        }
+
+        static void Notas()
+        {
+            Aluno aluno = new Aluno();
+            Console.Write("Nome do aluno: ");
+            aluno.Nome = Console.ReadLine();
+
+            Console.WriteLine("Digite as três notas do aluno:");
+            aluno.Nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            aluno.Nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            aluno.Nota3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine($"\nNOTA FINAL = {aluno.NotaFinal().ToString("F2", CultureInfo.InvariantCulture)}");
+            aluno.Situacao();
         }
     }
 }

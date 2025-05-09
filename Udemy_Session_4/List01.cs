@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace Udemy_Session_4
+namespace List01
 {
     public class Pessoa
     {
