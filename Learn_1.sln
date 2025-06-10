@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy_Session_3", "Udemy_Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy_Session_5", "Udemy_Session_5\Udemy_Session_5.csproj", "{369BAD2F-EF71-4727-AACD-1F2F119D402F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy_Session_6", "Udemy_Session_6\Udemy_Session_6.csproj", "{3C2D4497-5F09-470B-B529-E4F24C1D8341}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{369BAD2F-EF71-4727-AACD-1F2F119D402F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{369BAD2F-EF71-4727-AACD-1F2F119D402F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{369BAD2F-EF71-4727-AACD-1F2F119D402F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2D4497-5F09-470B-B529-E4F24C1D8341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2D4497-5F09-470B-B529-E4F24C1D8341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2D4497-5F09-470B-B529-E4F24C1D8341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2D4497-5F09-470B-B529-E4F24C1D8341}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
