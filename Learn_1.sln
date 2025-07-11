@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy_Session_5", "Udemy_Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy_Session_6", "Udemy_Session_6\Udemy_Session_6.csproj", "{3C2D4497-5F09-470B-B529-E4F24C1D8341}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy_Session_7", "Udemy_Session_7\Udemy_Session_7.csproj", "{BBAC736B-4675-47E4-9E77-C22F126E82A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy_Session_8", "Udemy_Session_8\Udemy_Session_8.csproj", "{40EDA963-8C04-2519-B16C-7E0A7D4DD340}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,10 +55,10 @@ Global
 		{3C2D4497-5F09-470B-B529-E4F24C1D8341}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C2D4497-5F09-470B-B529-E4F24C1D8341}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C2D4497-5F09-470B-B529-E4F24C1D8341}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BBAC736B-4675-47E4-9E77-C22F126E82A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BBAC736B-4675-47E4-9E77-C22F126E82A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BBAC736B-4675-47E4-9E77-C22F126E82A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BBAC736B-4675-47E4-9E77-C22F126E82A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40EDA963-8C04-2519-B16C-7E0A7D4DD340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40EDA963-8C04-2519-B16C-7E0A7D4DD340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40EDA963-8C04-2519-B16C-7E0A7D4DD340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40EDA963-8C04-2519-B16C-7E0A7D4DD340}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
