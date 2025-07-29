@@ -24,23 +24,25 @@ namespace Udemy_Session_9
 
                 Console.Write("Common, used or imported (c/u/i)? ");
                 char type = char.Parse(Console.ReadLine().ToLower());
+                Product result;
 
                 switch (type)
                 {
                     case 'c':
-                        Product.RegisterProduct(i, products);
+                        result = Product.RegisterProduct();
                         break;
                     case 'u':
-                        UsedProduct.RegisterUsed(i, products);
+                        result = UsedProduct.RegisterUsed();
                         break;
                     case 'i':
-                        ImportedProduct.RegisterImported(i, products);
+                        result = ImportedProduct.RegisterImported();
                         break;
                     default:
                         Console.WriteLine("Invalid type. Please enter 'c', 'u', or 'i'.");
                         i--;
                         continue;
                 }
+                products[i] = result;
             }
 
             Console.WriteLine($"\n{Colors.BOLD}PRICE TAGS:{Colors.RESET}");

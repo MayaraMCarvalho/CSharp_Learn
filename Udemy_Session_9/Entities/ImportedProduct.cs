@@ -24,20 +24,19 @@ namespace Udemy_Session_9.Entities
                     $"(Customs fee: $ {CustomsFee.ToString("F2", System.Globalization.CultureInfo.InvariantCulture)})";
         }
 
-        public static void RegisterImported( int i, Product[] products )
+        public static ImportedProduct RegisterImported( )
         {
             ImportedProduct product = new ImportedProduct();
 
-            Console.Write("Name: ");
-            product.Name = Console.ReadLine();
+            Product result = RegisterProduct();
 
-            Console.Write("Price: ");
-            product.Price = double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture);
+            product.Name = result.Name;
+            product.Price = result.Price;
 
             Console.Write("Customs fee: ");
             product.CustomsFee = double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture);
 
-            products[i] = product;
+            return product;
         }
     }
 }

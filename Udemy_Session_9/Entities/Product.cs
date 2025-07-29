@@ -20,7 +20,7 @@ namespace Udemy_Session_9.Entities
                     $"{Price.ToString("F2", System.Globalization.CultureInfo.InvariantCulture)}";
         }
 
-        public static void RegisterProduct( int i, Product[] products )
+        public static Product RegisterProduct( )
         {
             Product product = new Product();
 
@@ -30,7 +30,7 @@ namespace Udemy_Session_9.Entities
             Console.Write("Price: ");
             product.Price = double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture);
 
-            products[i] = product;
+            return product;
         }
     }
 }
