@@ -22,12 +22,13 @@ namespace Udemy_Session_9.Entities
 
         public static UsedProduct RegisterUsed( )
         {
-            UsedProduct product = new UsedProduct();
-
             Product result = RegisterProduct();
 
-            product.Name = result.Name;
-            product.Price = result.Price;
+            UsedProduct product = new UsedProduct
+            {
+                Name = result.Name,
+                Price = result.Price
+            };
 
             Console.Write("Manufacture date (DD/MM/YYYY): ");
             product.ManufactureDate = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);

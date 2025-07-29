@@ -26,13 +26,13 @@ namespace Udemy_Session_9.Entities
 
         public static ImportedProduct RegisterImported( )
         {
-            ImportedProduct product = new ImportedProduct();
-
             Product result = RegisterProduct();
-
-            product.Name = result.Name;
-            product.Price = result.Price;
-
+            ImportedProduct product = new ImportedProduct            
+            {
+                Name = result.Name,
+                Price = result.Price
+            };
+            
             Console.Write("Customs fee: ");
             product.CustomsFee = double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture);
 
