@@ -1,5 +1,6 @@
-﻿
-namespace Udemy_Session_9.Entities
+﻿using System.Globalization;
+
+namespace Udemy_Session_9.Products.Entities
 {
     internal class UsedProduct : Product
     {
@@ -15,12 +16,12 @@ namespace Udemy_Session_9.Entities
 
         public override string PriceTag()
         {
-            return  $"{Name} (used) $ " +
-                    $"{Price.ToString("F2", System.Globalization.CultureInfo.InvariantCulture)} " +
+            return $"{Name} (used) $ " +
+                    $"{Price.ToString("F2", CultureInfo.InvariantCulture)} " +
                     $"(Manufacture date: {ManufactureDate:dd/MM/yyyy})";
         }
 
-        public static UsedProduct RegisterUsed( )
+        public static UsedProduct RegisterUsed()
         {
             Product result = RegisterProduct();
 
@@ -31,7 +32,7 @@ namespace Udemy_Session_9.Entities
             };
 
             Console.Write("Manufacture date (DD/MM/YYYY): ");
-            product.ManufactureDate = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
+            product.ManufactureDate = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", CultureInfo.InvariantCulture);
 
             return product;
         }

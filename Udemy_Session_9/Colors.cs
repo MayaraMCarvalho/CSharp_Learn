@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Udemy_Session_9.Entities
+﻿namespace Udemy_Session_9
 {
     internal class Colors
     {
