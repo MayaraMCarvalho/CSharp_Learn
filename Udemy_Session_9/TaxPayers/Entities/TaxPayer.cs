@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace Udemy_Session_9.Contributors.Entities
+namespace Udemy_Session_9.TaxPayers.Entities
 {
     internal abstract class TaxPayer
     {
@@ -25,7 +25,7 @@ namespace Udemy_Session_9.Contributors.Entities
             for (int i = 0; i < number; i++)
             {
                 Console.WriteLine($"{Colors.BOLD}Tax payer #{i + 1} data: {Colors.RESET}");
-                taxPayers[i] = TaxPayer.RegisterTaxPayer();
+                taxPayers[i] = RegisterTaxPayer();
             }
 
             Console.WriteLine($"{Colors.BOLD}\nTAXES PAID:{Colors.RESET}");

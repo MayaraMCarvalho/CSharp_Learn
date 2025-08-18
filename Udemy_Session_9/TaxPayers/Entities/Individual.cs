@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace Udemy_Session_9.Contributors.Entities
+namespace Udemy_Session_9.TaxPayers.Entities
 {
     internal class Individual : TaxPayer
     {
@@ -8,7 +8,7 @@ namespace Udemy_Session_9.Contributors.Entities
 
         public override double CalculateTax()
         {
-            double tax = (AnnualIncome > 20000.0) ? AnnualIncome * 0.25 - HealthExpenses * 0.5 : AnnualIncome * 0.15;
+            double tax = AnnualIncome > 20000.0 ? AnnualIncome * 0.25 - HealthExpenses * 0.5 : AnnualIncome * 0.15;
 
             TotalTax += tax;
 

@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace Udemy_Session_9.Contributors.Entities
+namespace Udemy_Session_9.TaxPayers.Entities
 {
     internal class Company : TaxPayer
     {
