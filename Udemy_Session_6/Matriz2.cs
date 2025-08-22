@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Udemy_Session_6
+namespace Udemy_Session_06
 {
     public class Matriz2
     {

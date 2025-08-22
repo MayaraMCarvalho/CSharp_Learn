@@ -1,4 +1,4 @@
-﻿namespace Udemy_Session_8.Entities.Enums
+﻿namespace Udemy_Session_08.Entities.Enums
 {
     public enum OrderStatus : int
     {

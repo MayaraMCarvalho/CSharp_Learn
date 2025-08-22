@@ -1,4 +1,4 @@
-﻿namespace Udemy_Session_9
+﻿namespace Udemy_Session_09
 {
     internal class Colors
     {

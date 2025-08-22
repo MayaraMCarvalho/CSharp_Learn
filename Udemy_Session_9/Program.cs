@@ -1,6 +1,6 @@
-﻿using Udemy_Session_9.TaxPayers.Entities;
+﻿using Udemy_Session_09.TaxPayers.Entities;
 
-namespace Udemy_Session_9
+namespace Udemy_Session_09
 {
     class Program
     {

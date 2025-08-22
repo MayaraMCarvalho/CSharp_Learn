@@ -1,5 +1,4 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace Lists
 {
@@ -84,7 +83,7 @@ namespace Lists
                 string[] values = Console.ReadLine().Split(' ');
                 int a = int.Parse(values[0]);
                 int b = int.Parse(values[1]);
-               
+
                 if (b == 0)
                 {
                     Console.WriteLine("divisao impossivel");
@@ -93,7 +92,7 @@ namespace Lists
                 {
                     double div = (double) a / b;
                     Console.WriteLine($"{div.ToString("F1", CultureInfo.InvariantCulture)}");
-                }    
+                }
             }
         }
 

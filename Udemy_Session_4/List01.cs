@@ -1,5 +1,4 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace List01
 {
@@ -39,7 +38,7 @@ namespace List01
             }
         }
 
-       
+
     }
 
     public class Funcionario

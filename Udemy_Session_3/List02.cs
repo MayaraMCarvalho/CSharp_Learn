@@ -1,5 +1,4 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace Lists
 {
@@ -179,7 +178,7 @@ namespace Lists
             }
 
             tax += (salary - 2000.0) * 0.08;
-            
+
             Console.WriteLine($"R$ {tax.ToString("F2", CultureInfo.InvariantCulture)}");
         }
     }

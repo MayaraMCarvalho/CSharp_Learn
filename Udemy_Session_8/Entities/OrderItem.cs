@@ -1,4 +1,4 @@
-﻿namespace Udemy_Session_8.Entities
+﻿namespace Udemy_Session_08.Entities
 {
     internal class OrderItem
     {

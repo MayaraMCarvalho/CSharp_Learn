@@ -71,3 +71,24 @@ $msg = Read-Host
 # Confirma e executa o commit
 Write-Host "`nExecutando commit..." -ForegroundColor $BBLUE
 git commit -m "${type}: $msg"
+
+# Mensagem de confirmação do commit
+Write-Host "`nCommit realizado com sucesso!" -ForegroundColor $BGREEN
+
+# Exibe o status do repositório após o commit
+git status
+
+# Pergunta se o usuário deseja subir as alterações
+$pushChoice = Read-Host "`nDeseja subir as alterações para o repositório remoto? (s/n)"
+$pushChoice = $pushChoice.ToLower()
+
+if ($pushChoice -eq 's')
+{
+    Write-Host "`nSubindo alterações para o repositório remoto..." -ForegroundColor $BGREEN
+    git push
+    Write-Host "`nAlterações enviadas com sucesso!" -ForegroundColor $BBLUE
+}
+else
+{
+    Write-Host "`nAlterações não foram enviadas." -ForegroundColor $BYELLOW
+}

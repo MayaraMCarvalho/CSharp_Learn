@@ -1,13 +1,12 @@
-﻿using System;
-using System.Globalization;
-using Udemy_Session_8.Entities;
-using Udemy_Session_8.Entities.Enums;
+﻿using System.Globalization;
+using Udemy_Session_08.Entities;
+using Udemy_Session_08.Entities.Enums;
 
-namespace Udemy_Session_8
+namespace Udemy_Session_08
 {
     class Program
     {
-        static void Main( string[] args )
+        static void Main(string[] args)
         {
             Console.WriteLine("Enter client data:");
 
@@ -50,9 +49,9 @@ namespace Udemy_Session_8
 
                 Console.Write("Quantity: ");
                 int quantity = int.Parse(Console.ReadLine());
-                
+
                 OrderItem orderItem = new OrderItem(quantity, productPrice, product);
-                
+
                 order.AddItem(orderItem);
             }
 

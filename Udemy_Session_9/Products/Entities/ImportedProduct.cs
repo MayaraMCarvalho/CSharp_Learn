@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace Udemy_Session_9.Products.Entities
+namespace Udemy_Session_09.Products.Entities
 {
     internal class ImportedProduct : Product
     {

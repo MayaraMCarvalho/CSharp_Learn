@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace Udemy_Session_9.TaxPayers.Entities
+namespace Udemy_Session_09.TaxPayers.Entities
 {
     internal abstract class TaxPayer
     {

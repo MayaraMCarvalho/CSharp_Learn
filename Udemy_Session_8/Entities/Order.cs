@@ -1,8 +1,8 @@
 ﻿using System.Globalization;
 using System.Text;
-using Udemy_Session_8.Entities.Enums;
+using Udemy_Session_08.Entities.Enums;
 
-namespace Udemy_Session_8.Entities
+namespace Udemy_Session_08.Entities
 {
     internal class Order
     {

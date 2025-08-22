@@ -1,14 +1,12 @@
-﻿using System;
-using System.Globalization;
-using List01;
+﻿using List01;
 using List02;
 using List03;
 
-namespace Udemy_Session_4
+namespace Udemy_Session_04
 {
     class Program
     {
-        static void Main( string[] args )
+        static void Main(string[] args)
         {
             // Exs List01            
             Pessoa.Cadastro();
@@ -22,6 +20,6 @@ namespace Udemy_Session_4
             // Exs List03
             Cotacao.GetCotacao();
             Produto.Cadastro();
-        }       
+        }
     }
 }

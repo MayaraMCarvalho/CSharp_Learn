@@ -1,5 +1,4 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace List02
 {
@@ -47,7 +46,7 @@ namespace List02
             return SalarioBruto - Imposto;
         }
 
-        void AumentarSalario( double porcentagem )
+        void AumentarSalario(double porcentagem)
         {
             SalarioBruto += SalarioBruto * porcentagem / 100.0;
         }
@@ -77,7 +76,7 @@ namespace List02
             Console.WriteLine($"\nDados atualizados: {func}");
         }
 
-       
+
     }
 
     public class Aluno
@@ -93,7 +92,7 @@ namespace List02
         {
             if (NotaFinal() >= 60.0)
             {
-                 Console.WriteLine("APROVADO");
+                Console.WriteLine("APROVADO");
             }
             else
             {

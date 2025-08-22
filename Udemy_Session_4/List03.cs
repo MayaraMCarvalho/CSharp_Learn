@@ -1,9 +1,8 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace List03
 {
-   public class Cotacao()
+    public class Cotacao()
     {
         public double   CotacaoDolar;
         public double   QuantidadeDolar;
@@ -11,7 +10,7 @@ namespace List03
         double RealToDolar()
         {
             double total = CotacaoDolar * QuantidadeDolar;
-            return total += total * 0.06 ;
+            return total += total * 0.06;
         }
 
         public void ValorTotal()
@@ -46,13 +45,13 @@ namespace List03
 
         public void AdcionarProdutos(int quantity)
         {
-           Quantidade += quantity;
+            Quantidade += quantity;
         }
 
-        public void RemoverProdutos( int quantity )
+        public void RemoverProdutos(int quantity)
         {
             Quantidade -= quantity;
-         }
+        }
 
         public override string ToString()
         {

@@ -1,8 +1,4 @@
-﻿using System;
-
-using Lists;
-
-namespace Lists
+﻿namespace Lists
 {
     class Program
     {
