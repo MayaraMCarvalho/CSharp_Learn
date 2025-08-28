@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy_Session_10", "Udemy_S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy_Session_11", "Udemy_Session_11\Udemy_Session_11.csproj", "{9B00D4DE-86CD-4C3A-8875-199915BDCA50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy_Session_12", "Udemy_Session_12\Udemy_Session_12.csproj", "{EAE63B9E-65C0-4463-9F29-D00C77886B8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,6 +80,10 @@ Global
 		{9B00D4DE-86CD-4C3A-8875-199915BDCA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B00D4DE-86CD-4C3A-8875-199915BDCA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B00D4DE-86CD-4C3A-8875-199915BDCA50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE63B9E-65C0-4463-9F29-D00C77886B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE63B9E-65C0-4463-9F29-D00C77886B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE63B9E-65C0-4463-9F29-D00C77886B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE63B9E-65C0-4463-9F29-D00C77886B8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
