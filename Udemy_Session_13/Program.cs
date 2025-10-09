@@ -6,6 +6,16 @@ namespace Udemy_Session_13
     {
         static void Main()
         {
+            // Ex 13.1 - HashSet
+            //UseHashSet();
+
+            // Ex 13.2 - Dictionary
+            UseDictionary();
+
+        }
+
+        public static void UseHashSet()
+        {
             HashSet<Course> courses = new HashSet<Course> { new Course { Name = "A" }, new Course { Name = "B" }, new Course { Name = "C" } };
             HashSet<Student> total = new HashSet<Student>();
 
@@ -25,5 +35,46 @@ namespace Udemy_Session_13
 
             Console.WriteLine("Total students: " + total.Count);
         }
+
+        public static void UseDictionary()
+        {
+            Dictionary<string, int> votes = new Dictionary<string, int>();
+
+            Console.Write("Enter file full path: ");
+            string path = Console.ReadLine();
+
+            try
+            {
+                using (StreamReader sr = File.OpenText(path))
+                {
+                    while (!sr.EndOfStream)
+                    {
+                        string[] fields = sr.ReadLine().Split(',');
+
+                        string name = fields[0];
+                        int vote = int.Parse(fields[1]);
+
+                        if (votes.ContainsKey(name))
+                        {
+                            votes[name] += vote;
+                        }
+                        else
+                        {
+                            votes[name] = vote;
+                        }
+                    }
+
+                    foreach (var item in votes)
+                    {
+                        Console.WriteLine(item.Key + ": " + item.Value);
+                    }
+                }
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
     }
 }
+
